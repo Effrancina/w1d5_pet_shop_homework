@@ -44,8 +44,33 @@ def get_pets_by_breed(pet_shop, breed_to_find):
             same_breed.append(pet["breed"])
     return same_breed
 
-def find_pet_by_name(pet_shop, pet_x):
-    for pet in pet_shop["pets"]:
-        if pet_x == pet["name"]:
-            return pet_x
-        
+# def find_pet_by_name(pet_shop, pet_x):
+#     pet_x = None
+#     for pet in pet_shop["pets"]:
+#         if pet_x == pet["name"]:
+#             return pet_x
+
+# def find_pet_by_name(pet_shop, pet_x):
+#     for pet in pet_shop["pets"]:
+#         if pet["name"] == pet_x:
+#             return pet_x
+#     return pet_x
+
+# def find_pet_by_name(pet_shop, pet_x):
+#     for pet in pet_shop["pets"]:
+#         if pet["name"] == pet_x["name"]:
+#             return pet_x["name"]
+#     return pet_x["name"]
+
+# def find_pet_by_name(pet_shop, name_pet):
+#     for pet in pet_shop["pets"]:
+#         if pet["name"] == name_pet:
+#             return name_pet
+#         else:
+#             pass
+#     return name_pet
+       
+# def find_pet_by_name(pet_shop, name_pet):
+#     for pet in pet_shop["pets"]:
+#         if pet["name"] == name_pet:
+#             return name_pet
