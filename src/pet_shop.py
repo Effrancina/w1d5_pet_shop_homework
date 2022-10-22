@@ -1,3 +1,6 @@
+from sre_parse import parse_template
+
+
 def get_pet_shop_name(pet_shop):
     return pet_shop["name"]
 
@@ -78,8 +81,17 @@ def find_pet_by_name(pet_shop, name):
 
 def remove_pet_by_name(pet_shop, name):
     for pet in pet_shop["pets"]:
-        if find_pet_by_name(pet_shop,name) == name:
+        if find_pet_by_name(pet_shop,name) == pet:
             pet_shop["pets"].remove(pet)
-        else:
-            pass
 
+def add_pet_to_stock(pet_shop, new_pet):
+    pet_shop["pets"].append(new_pet)
+
+def get_customer_cash(customers):
+    return customers["cash"]
+
+# def remove_customer_cash(customers, cash_left):
+#     for customer in customers:
+#         cash_left = customer["cash"] - new_pet["price"]
+#     return cash_left
+def remove_customer_cash(customer, cash_left):
